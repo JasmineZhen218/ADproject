@@ -4,7 +4,7 @@ This is a repository for processing and analyzing pathology images of Alzheimer 
 
 ### Image preprocessing
 
-The goal of this section is to prepare training dataset for training neural network in the next step. The large pathology images were cropped into small pieces. Pieces and their pixel-wise labelling were saved. 
+The goal of this section is to prepare training dataset for training neural network in the next step. The large pathology images were cropped into small pieces. Pieces and their pixel-wise labelling were saved in a 132 x 132 x 4 ndarray.
 
 Details of codes, data and demo: https://github.com/JasmineZhen218/ADproject/blob/master/preprocess/readme.md
 
