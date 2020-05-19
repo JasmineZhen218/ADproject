@@ -3,6 +3,21 @@
 Created on Sun Feb  2 16:39:39 2020
 
 @author: Jasmine
+This script is used to train a unet model from scratch or based on a pretrained model
+* Train from scratch , it takes 4 arguments:         
+        1) Trainset_path: path to training dataset
+        2) batch_size: training batch size, recommend 16
+        3) nepochs: number of epochs, recommend 3 as the dataset is quite big
+        4) model_save_path: path to save the trained model
+* Train based on pretrained model. it takes 5 arguments:    
+        1) Trainset_path: path to training dataset
+        2) batch_size: training batch size, recommend 16
+        3) nepochs: number of epochs, recommend 3 as the dataset is quite big
+        4) model_save_path: path to save the trained model
+        5) model_load_path: path to pretrained model if you don't want to train from scratch
+
+The up-to-date model will be saved
+
 """
 
 import os
@@ -83,6 +98,14 @@ def train_unet(unet,dataloader,optimizer,loss_fn,nepochs):
 
 
 def main(argv):
+    """
+    Argv:
+        1) Trainset_path: path to training dataset
+        2) batch_size: training batch size, recommend 16
+        3) nepochs: number of epochs, recommend 3 as the dataset is quite big
+        4) model_save_path: path to save the trained model
+        5) (optional) model_load_path: path to pretrained model if you don't want to train from scratch
+    """
     Trainset_path=argv[0]  # path to training dataset
     batch_size=int(argv([1]))
     nepochs=int(argv[2])   # number of epochs

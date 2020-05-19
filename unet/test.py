@@ -3,7 +3,18 @@
 Created on Mon Feb  3 16:31:51 2020
 
 @author: Jasmine
+This script is used to test the performance of unet models
+It takes 2 arguments from command line, 
+1)  the path to dataset you want to test on, 
+2)  the path to pretrained models.
+
+Nothing will be saved..
+AUC, threshold making max(sensitivity and specificty), Confusion matrix, accuracy will show on standard output.
+
 """
+
+
+
 
 import os
 import sys
@@ -128,6 +139,11 @@ def extend_pixels(results):
 # =============================================================================
     
 def main(argv):
+    """
+    Argv:
+        1) Testset_path: path to dataset you want to test on
+        2) input_path:path to unet model
+    """
     Testset_path=argv[0]  # path to training dataset
     input_path=argv[1]
     unet = UNet(in_ch=3, # number of channels in input image, RGB=3

@@ -86,14 +86,20 @@ def create_dataset(base,zone_sample,label,save_path,sample_num,accumulator,sampl
     
 
 def main(argv):
-
+    """
+    Argv:
+        sample_num: how many samples you want to extracted from this pathology image
+        accumulator: the number of samples having been in dataset
+        input_path: path to annotation pathology image
+        output: path to save extracted samples
+    """
     sample_num=int(argv[0]) # how many samples you want to extracted from this pathology image
     accumulator=int(argv[1]) # the number of samples having been in `save_path`. 
     input_path=argv[2]
     output_path=argv[3]  # where you want to save these extarcted samples
     
-    if len(argv) == 4:
-            sample_size=argv[3]
+    if len(argv) == 5:
+            sample_size=argv[4]
         
     sample_size=(132,132)
     base=mpimg.imread(os.join.path(input_path,"Base.tif"))
@@ -106,7 +112,7 @@ def main(argv):
     label=label[:,:,0]
     print(base.shape)
     print(label.shape)
-    print("It is going to append samples to the dataset {}".format(save_path))
+    print("It is going to append samples to the dataset {}".format(output_path))
     print("There has been {} samples in this dataset".format(accumulator))
     accumulator=create_dataset(base,
                    zone_sample,
