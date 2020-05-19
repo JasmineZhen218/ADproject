@@ -6,7 +6,7 @@ This is a repository for processing and analyzing pathology images of Alzheimer 
 
 The goal of this section is to prepare training dataset for training neural network in the next step. The large pathology images were cropped into small pieces. Pieces and their pixel-wise labelling were saved. 
 
-Details of codes, data and demo: 
+Details of codes, data and demo: https://github.com/JasmineZhen218/ADproject/blob/master/preprocess/readme.md
 
 ### Semantic segmentation using UNET
 
@@ -15,7 +15,7 @@ The goal of this section is to train UNET models using annotated images and then
 * STEP1: Train UNET models and evaluate performance
 * STEP2: Apply satisfactory UNET models to unlabeled images to form probability map
 
-Detailed of codes , pretrained  models and demo: 
+Detailed of codes , pretrained  models and demo: https://github.com/JasmineZhen218/ADproject/blob/master/unet/readme.md
 
 ### Feature extraction
 
