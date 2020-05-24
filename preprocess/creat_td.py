@@ -102,10 +102,10 @@ def main(argv):
             sample_size=argv[4]
         
     sample_size=(132,132)
-    base=mpimg.imread(os.join.path(input_path,"Base.tif"))
+    base=mpimg.imread(os.path.join(input_path,"Base.tif"))
     base=base.transpose((1,0,2))
-    zone_sample=nib.load(os.join.path(input_path,"SampleZone.nii.gz"))
-    label=nib.load(os.join.path(input_path,"Biomarker.nii.gz"))
+    zone_sample=nib.load(os.path.join(input_path,"SampleZone.nii.gz"))
+    label=nib.load(os.path.join(input_path,"Biomarker.nii.gz"))
     zone_sample=zone_sample.get_fdata()
     zone_sample=zone_sample[:,:,0]    
     label=label.get_fdata()

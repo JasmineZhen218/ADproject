@@ -49,11 +49,11 @@ python train.py cis/home/zwang/Documents/ADproject/DatasetUnet/Tau/Test  cis/hom
 
 > It will test the  unet model cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels/unet_tau.pth  on samples in cis/home/zwang/Documents/ADproject/DatasetUnet/Tau/Test  
 
-Nothing will be saved after running `test.py`. But you will see AUC, confusion matrix, accuracy on standard output.
+Nothing will be saved after running `test.py`. But you will see AUC, confusion matrix, accuracy on terminal
 
 ##### Output
 
-Location of pretrained models(in GitHub): https://github.com/JasmineZhen218/ADproject/blob/master/unet/asset
+Location of pre-trained models(in GitHub): https://github.com/JasmineZhen218/ADproject/blob/master/unet/asset
 
 Location of pretrained models(in CIS file system): `cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels`
 
@@ -78,8 +78,16 @@ To apply a model on a labeled pathology image, run the script `apply.py`. It tak
 An example to run `apply.py`:
 
 ```
-python apply.py cis/home/
+python apply.py  /cis/home/zwang/Documents/ADproject/Histology/Tau/Tau_Brain2_B1L10/Base.tif
+/cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels/unet_tau.pth
+/cis/home/zwang/Documents/ADproject/Histology/Tau/Tau_Brain2_B1L10/Prob_map.npy
 ```
+
+##### Output demo
+
+You will see the comparision of original base images and probabability map in 
+
+
 
 
 

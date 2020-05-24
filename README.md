@@ -1,6 +1,6 @@
 # AD pathology analysis
 
-This is a repository for processing and analyzing pathology images of Alzheimer disease(AD) patients. There are three sections:
+This is a repository for processing and analyzing pathology images of Alzheimer disease(AD) patients. It consists of 4 sections: 1) Image preprocessing; 2) Semantic segmentation using UNET; 3) Feature extraction; 4) Multiresolution analysis.
 
 ### Image preprocessing
 
@@ -31,6 +31,6 @@ Detailed of codes, results and demo:
 The goal of this section is to reconstruct feature map from the `description.csv` files and conduct multiresolution analysis
 
 * STEP1: Reconstruct feature map by "filling" each biomarker with its corresponding features. There would be one feature map for each feature, such as `size_map`, `orientation_map`.
-* STEP:  Calculate local average and local standard deviation on these maps using Gaussian smoothing with various `sigma`
+* STEP2:  Calculate local average and local standard deviation on these maps using Gaussian smoothing with various `sigma`
 
 Details of codes, results and demo： 

@@ -12,7 +12,7 @@ There are two kinds of biomarkers for in AD pathology images:
 
 #### Input
 
-To extract samples from large pathology images, you have to ensure these 3 files exist:
+To extract samples from large pathology images, you have to ensure that these 3 files exist:
 
 1) `Base.tif`   This is the original pathology image
 
@@ -20,16 +20,9 @@ To extract samples from large pathology images, you have to ensure these 3 files
 
 3) `Biomarker.nii.gz` This file record which pixels were annotated as biomarkers. Pixels annotated as biomarkers were labeled as 1. Pixels that were annotated as non-biomarker or not been annotated were labeled as 0.
 
-* Location of annotated Tau-pathology images: `cis/home/zwang/Documents/ADproject/Annotation/Tau`
-
-* Location of annotated Amyloid-pathology images: `cis/home/zwang/Documents/ADproject/Annotation/Amyloid`
-
 ### How to run code
 
-First, use pip to install the requirements from the `requirements.txt`
-Ensure you have `base.tif, SampleZone.nii.gz, Biomarker.nii.gz`
-
-Run the script `creat_td.py`. It takes 5 arguments:
+To extract samples from annotated pathology imahes, Firstly use pip to install the requirements from the `requirements.txt`, then run the script `creat_td.py`. It takes 5 arguments (the 5th is optional)
 
   1) number of samples you want to extract from this pathology image
   2) number of samples having been in the dataset directory where you are going to save extracted samples
@@ -40,27 +33,16 @@ Run the script `creat_td.py`. It takes 5 arguments:
 An example command to run the file would look like:
 
 ```
-python creat_td.py 500 0 cis/home/zwang/Documents/ADproject/Annotation/Amyloid/1
-cis/home/zwang/Documents/ADproject/DatasetUnet/Amyloid/Train 
+python creat_td.py 500 0 asset/Annotation asset/Samples (132,132)
 ```
-
-> You are going to extract 500 samples from annotated images in cis/home/zwang/Documents/ADproject/Annotation/Amyloid/1 and save them into cis/home/zwang/Documents/ADproject/DatasetUnet/Amyloid/Train . There are no samples in cis/home/zwang/Documents/ADproject/DatasetUnet/Amyloid/Train before running this script.
 
 ### Output
 
-* Sample format
+There are 500 extracted samples in  
 
-The annotated regions would firstly been located using `SampleZone.nii.gz`. Within each annotated region, a bunch of 132 x 132 (if you do not specify the height and width) pieces would be cropped from both `Base.tif` and `Biomarker.nii.gz`. The extracted sample is a  ndarray array of shape (132,132,4). The first 3 channels contain information from `Base.tif`, the last channel contains information from `Biomarker.nii.gz`
+Each samples is a 132 x 132 x 4 ndarray. The first 3 channels contain information from `Base.tif`, the last channel contains information from `Biomarker.nii.gz`
 
-There are 5 examples in `/sample`. You could use `show_sample.inpy` to visualize them.
-
-* Location of extracted samples
-
-Location of tau-samples: `cis/home/zwang/Documents/ADproject/DatasetUnet/Tau`
-
-Location of amyloid-samples: `cis/home/zwang/Documents/ADproject/DatasetUnet/Amyloid`
-
-
+Visualize some of them in 
 
 
 
