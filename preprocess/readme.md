@@ -26,11 +26,10 @@ To extract samples from large pathology images, you have to ensure these 3 files
 
 ### How to run code
 
-1) First, use pip to install the requirements from the `requirements.txt`
+First, use pip to install the requirements from the `requirements.txt`
+Ensure you have `base.tif, SampleZone.nii.gz, Biomarker.nii.gz`
 
-2) Ensure you have `base.tif, SampleZone.nii.gz, Biomarker.nii.gz`
-
-3) Run the script `creat_td.py`. It takes 5 arguments:
+Run the script `creat_td.py`. It takes 5 arguments:
 
   1) number of samples you want to extract from this pathology image
   2) number of samples having been in the dataset directory where you are going to save extracted samples
