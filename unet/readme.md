@@ -53,7 +53,7 @@ Nothing will be saved after running `test.py`. But you will see AUC, confusion m
 
 ##### Output
 
-Location of pretrained models(in GitHub):
+Location of pretrained models(in GitHub): https://github.com/JasmineZhen218/ADproject/blob/master/unet/asset
 
 Location of pretrained models(in CIS file system): `cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels`
 
@@ -75,7 +75,7 @@ To apply a model on a labeled pathology image, run the script `apply.py`. It tak
 
 3) path to save the probability map
 
-An example to run `applu.py`:
+An example to run `apply.py`:
 
 ```
 python apply.py cis/home/
