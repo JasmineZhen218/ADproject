@@ -99,7 +99,7 @@ python apply.py  asset/Base_amyloid.tif asset/unet_amyloid.pth asset/Prob_map.np
 
 ​	[1] Probability map: It should be a 1-channel NDARRAY file. The value of each pixel represents the probability of being a biomarker here.
 
-See the comparison of original base images and probability map in [???] 
+See the comparison of original base images and probability map in https://github.com/JasmineZhen218/ADproject/blob/master/unet/Visualize%20pathology%20image%20and%20probability%20map.ipynb
 
 
 
