@@ -51,6 +51,8 @@ feature_extraction.py asset/Prob_map.npy asset/Segmented.npy asset/description.c
 >
 > `roundness`: Roundness of the biomarker
 
+Example output : https://drive.google.com/open?id=1rD41vWmJE_TDFml1q5zuXfmN4QXDyHcY
+
 ### Methods 
 
 2. Biomarker segmentation: [watershed algorithm in OpenCV-python](https://docs.opencv.org/master/d3/db4/tutorial_py_watershed.html) is applied to down sampled version of probability map.
