@@ -1,6 +1,6 @@
 # Files locations in CIS system
 
-This is a project sponsored by Center of Image Science (JHU). The complete dataset and analysis results are all host in CIS system.
+This is a project sponsored by Center of Image Science (JHU) http://cis.jhu.edu/. The complete dataset and analysis results are all host in CIS system.
 
 ### Annotated pathology images
 
