@@ -25,3 +25,5 @@ This is a project sponsored by Center of Image Science (JHU) http://cis.jhu.edu/
 * Analyzed pathology images for amyloid plaque  `/cis/home/zwang/Documents/ADproject/Histology/Amyloid`
 
 ### Larger pathology image dataset
+
+* `/cis/home/dtward/Documents/exvivohuman_11T/more_blocks/`
