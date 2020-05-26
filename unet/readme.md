@@ -79,9 +79,14 @@ Nothing will be saved after running `test.py`. But you will see AUC, confusion m
 
 ##### Input
 
-​	[1] Unlabeled pathology image: It should be a 3-channel `tif` image
+​	[1] Unlabeled pathology image: It should be a 3-channel `.tif` image
 
-​	[2] pre-trained model: It should be a PyTorch model 
+Example input: 
+
+​	[2] pre-trained model: It should be a PyTorch model /unet_tau.pth
+
+Pre-trained model for tau tangle detection: https://github.com/JasmineZhen218/ADproject/tree/master/unet/asset/unet_tau.pth
+Pre-trained model for amyloid plaque detection: https://github.com/JasmineZhen218/ADproject/tree/master/unet/asset/unet_amyloid.pth
 
 ##### How to run the code
 
