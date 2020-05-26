@@ -42,6 +42,8 @@ In that directory, there are 3 constructed feature maps:
 
 [3] `Roundness_map.npy`: It is a 1-channel NDARRAY
 
+
+
 ### Texture extraction
 
 #### Algorithm
@@ -88,7 +90,25 @@ An example to run the code:
 python texture_extraction.py asset/FeatureMaps 200
 ```
 
+##### Output
+
+If you specify sigma=200, then output would be:
+
+>  [1] `Prob_map_blur_200.0.npy`
+>
+> [2] `Roundness_map_local_mean_200.0.npy`
+>
+> [3]`Roundness_map_local_std_200.0.npy`
+>
+> [4]`Size_map_local_mean_200.0.npy`
+>
+> [5] `Size_map_local_std_200.0.npy`
+>
+> [6] `Orientation_map_local_mean_200.0.npy`
+>
+> [7] `Orientation_map_local_std_200.0.npy`
 
 
 
+To visualize these output and see how they show the texture of feature maps, see https://drive.google.com/open?id=14VF4EpjGUQdoCBzw6vASqGO29LwNcBZk
 
