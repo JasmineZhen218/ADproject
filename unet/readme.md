@@ -33,7 +33,7 @@ python train.py /cis/home/zwang/Documents/ADproject/DatasetUnet/Tau/Train 16 3  
 Example to run `train.py` on the basis of a pre-trained model
 
 ```
-python train.py /cis/home/zwang/Documents/ADproject/DatasetUnet/Tau/Train 16 3  /cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModelsunet_tau_version2.pth /cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels/unet_tau.pth
+python train.py /cis/home/zwang/Documents/ADproject/DatasetUnet/Tau/Train 16 3  /cis/home/zwang/Documents/ADproject/UnetModels/unet_tau_version2.pth /cis/home/zwang/Documents/ADproject/UnetModels/unet_tau.pth
 ```
 
 ##### Output
