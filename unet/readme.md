@@ -19,9 +19,13 @@ U-net is convolutional network architecture for fast and precise segmentation of
 To train a UNET model from scratch or based on pretrained model, run the script `train.py`. It takes 5 arguments, the last one is only needed if you want to trained based on pretrained model
 
 ​	[1] Trainset_path: path to training dataset
+
 ​	[2] batch_size: training batch size, recommend 16
+
 ​	[3] nepochs: number of epochs, recommend 3 as the dataset is quite big
+
 ​	[4] model_save_path: path to save the trained model
+
 ​	[5] (optional) model_load_path: path to pretrained model if you don't want to train from scratch
 
 Example to run `train.py` from scratch:
