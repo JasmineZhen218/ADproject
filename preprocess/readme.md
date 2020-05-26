@@ -27,9 +27,13 @@ Example input: https://drive.google.com/open?id=1_dA-c3dzeopsNSzJb4yfspuVg2ipqQH
 To extract samples from annotated pathology images, firstly install the requirements from the `requirements.txt`, then run the script `creat_td.py`. It takes 5 arguments (the 5th is optional)
 
   [1] number of samples you want to extract from this pathology image
+  
   [2] number of samples having been in the dataset directory where you are going to save extracted samples
+  
   [3] path to annotation directory which contained  `base.tif, SampleZone.nii.gz, Biomarker.nii.gz`
+  
   [4] path to directory you want to save extracted samples
+  
   [5] (optional) height and width of samples you are going to extract, default is (132,132)
 
 An example command to run the file would look like:
