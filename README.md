@@ -24,7 +24,7 @@ The goal of this section is to every biomarkers from probability map  and descri
 * STEP1: Use watershed to get the clear contour of each biomarker from probability map
 * STEP2: Assign an ID and describe each biomarker and save the [ID: features] in to `description.csv` files 
 
-Detailed of codes, results and demo: 
+Detailed of codes, results and demo: https://github.com/JasmineZhen218/ADproject/blob/master/FeatureExtraction/readme.md
 
 ### Multiresolution analysis
 
