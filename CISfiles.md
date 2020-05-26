@@ -16,7 +16,12 @@ This is a project sponsored by Center of Image Science (JHU). The complete datas
 
 ### Pretrained Unet models
 
-* Pre-trained model for Tau tangle detection: `/cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels/unet_tau.pth`
-* Pre-trained model for Amyloid plaque detection: `/cis/home/zwang/Documents/ADproject/DatasetUnet/UnetModels/unet_amyloid.pth`
+* Pre-trained model for Tau tangle detection: `/cis/home/zwang/Documents/ADproject/UnetModels/unet_tau.pth`
+* Pre-trained model for Amyloid plaque detection: `/cis/home/zwang/Documents/ADproject/UnetModels/unet_amyloid.pth`
 
 ### Analyzed pathology images and their results
+
+* Analyzed pathology images for tau tangle  `/cis/home/zwang/Documents/ADproject/Histology/Tau`
+* Analyzed pathology images for amyloid plaque  `/cis/home/zwang/Documents/ADproject/Histology/Amyloid`
+
+### Larger pathology image dataset
