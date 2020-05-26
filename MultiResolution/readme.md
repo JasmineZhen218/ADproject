@@ -14,6 +14,8 @@ The reconstruction is conducted by filling the biomarker region with feature val
 
 [2] `description.csv`:  It is a `csv` file which records the features of each segmented biomarker.
 
+Get access to example files: https://drive.google.com/open?id=1FQKOIIQ_nz1TLIfJUecx2piUTnfbCOHD
+
 #### How to run the code
 
 To  reconstruct feature maps, run the script `fill_feature_maps`. It takes 3 arguments:
@@ -75,6 +77,8 @@ To conduct extract textures of feature maps, ensure these 4 files exist in the s
 [3] `Size_map.npy`
 
 [4] `Roundness_map.npy`
+
+Get access to example files: https://drive.google.com/open?id=1FQKOIIQ_nz1TLIfJUecx2piUTnfbCOHD
 
 #### How to run the code
 
