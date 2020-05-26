@@ -8,6 +8,8 @@ The goal of this section is to segment individual biomarkers from probability ma
 
 **Note: The original probability map has the same size with pathology image, which may be too large for down streaming analysis. We suggested to down sample it by 2 in row and column before feature extraction.**
 
+Example input: https://drive.google.com/open?id=1lYC56ayxqY2VQnwRAxJTRd_v8K3UixWW
+
 ### How to run the code
 
 To extract individual biomarkers and describe them, run the script `feature_extraction.py`. It takes three arguments:
