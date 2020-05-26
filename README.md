@@ -33,4 +33,4 @@ The goal of this section is to reconstruct feature map from the `description.csv
 * STEP1: Reconstruct feature map by "filling" each biomarker with its corresponding features. There would be one feature map for each feature, such as `size_map`, `orientation_map`.
 * STEP2:  Calculate local average and local standard deviation on these maps using Gaussian smoothing with various `sigma`
 
-Details of codes, results and demo： 
+Details of codes, results and demo： https://github.com/JasmineZhen218/ADproject/blob/master/MultiResolution/readme.md
