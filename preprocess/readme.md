@@ -40,7 +40,7 @@ python creat_td.py 500 0 asset/Annotation asset/Samples (132,132)
 
 The output are a bunch of NDARRAYs named as `1.npy`, `2.npy`, etc.   The number in the name is the unique ID assigned to  each sample. The name format should not be changed as they would be used in the UNET training in the next section. If you must change the name, go to `Dataloader` and make corresponding edition. Each samples is a 132 x 132 x 4 NEARRAY. The first 3 channels contain information from `Base.tif`, the last channel contains information from `Biomarker.nii.gz`
 
-Visualize some examples in https://github.com/JasmineZhen218/ADproject/blob/master/preprocess/visualize%20samples.ipynb
+Visualize some examples in https://drive.google.com/open?id=1LLVhPOscxOcdHwyChrHTm4eBiA_nANDh
 
 
 
