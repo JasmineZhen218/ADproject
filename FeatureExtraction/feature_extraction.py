@@ -164,12 +164,12 @@ def main(argv):
     print("We are going to deal with ", input_path)
     prob_map=np.load(input_path)
     
-    print("Segmenting biomarkers on downsampling version....")
+    #print("Segmenting biomarkers on downsampling version....")
     segmented=cv_watershed(prob_map)
     np.save(output_segmented_path,segmented)
     print("Finish segmentation, the segmented result has been be save in ",output_segmented_path)
     
-    print("Describing biomarkers on downsampling version...")
+    #print("Describing biomarkers on downsampling version...")
     descriptions=get_descriptions(segmented)
     descriptions.to_csv(output_csv_path,index=False)
     print("Finish description, the description csv file has been save in ",output_csv_path)
