@@ -58,7 +58,7 @@ class ADdataset(Dataset):
         return len(files)
     
     def __getitem__(self,idx):  
-        sample_name=os.path.join(self.root_dir,str(idx)+'.npy')
+        sample_name=os.path.join(self.path,str(idx)+'.npy')
         sample=np.load(sample_name)
         image=sample[:,:,0:3]
         label=sample[:,:,3]
